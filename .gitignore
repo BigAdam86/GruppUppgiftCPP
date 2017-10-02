@@ -4,7 +4,6 @@
 # User-specific files
 *.vcxproj
 *.filters
-*.sln
 *.suo
 *.user
 *.userosscache
