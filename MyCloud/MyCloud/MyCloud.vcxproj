@@ -111,10 +111,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Cloud.cpp" />
+    <ClCompile Include="Dashboard.cpp" />
+    <ClCompile Include="Devices.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="header.h" />
+    <ClInclude Include="Cloud.h" />
+    <ClInclude Include="Dashboard.h" />
+    <ClInclude Include="Devices.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
