@@ -1,21 +1,26 @@
-#include <string>
-using namespace std;
-
 #pragma once
 #ifndef cloud_h
 #define cloud_h
+#include <string>
+#include "Devices.h"
+#include "Dashboard.h"
+
+using namespace std;
+
+
 
 class Cloud {
 private:
-	string ConnectedDevices[100];
-	//Dashboard? Friend?
-	//Devices? Friend?
+	
+	Devices ConnectedDevices[100];
+	
 public:
-	Cloud(); //Default Constructor
-	void ConnectDevice();
-	void DisconnectDevice();
+	Cloud();					//Default Constructor
 
-	void PrintWelcome();
+	void ConnectDevice(Devices);		//Skapar en enhet
+	void DisconnectDevice();	//Tar bort en enhet
+
+	void PrintWelcome();		//Välkomstmeddelande
 
 };
 

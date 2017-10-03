@@ -1,7 +1,16 @@
 #include "Devices.h"
 
 Devices::Devices() {
-	//Default Constructor
+
+}
+
+Devices::Devices(string name) {
+	d_name = name;
+	
+	static int device_counter = 0;
+	device_counter++;
+	d_id = device_counter;
+	d_status = false;
 }
 
 
@@ -27,10 +36,5 @@ string Devices::getName() {
 }
 
 bool Devices::getStatus() {
-	if (/*something*/) {
-		return true;
-	}
-	else {
-		return false;
-	}
+	return d_status;
 }
