@@ -20,7 +20,7 @@ void Cloud::viewConnected() {
 }
 
 void Cloud::viewDashboard() {
-	for (int i = 1; i < 3; i++) {
+	for (int i = 1; i < 5; i++) {
 	int pID = AllDevices[i].getId();
 	string pName = AllDevices[i].getName();
 	bool pStatus = AllDevices[i].getStatus();
