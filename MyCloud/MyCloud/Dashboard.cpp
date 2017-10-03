@@ -6,15 +6,8 @@ Dashboard::Dashboard() {
 	//Default Constructor
 }
 
-void Dashboard::viewConnected() {
 
-}
-
-void Dashboard::viewDashboard() {
-
-}
-
-void Dashboard::UserMenu() {
+void Dashboard::DashboardMenu() {
 
 }
 

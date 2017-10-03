@@ -12,10 +12,7 @@ private:
 public:
 	Dashboard();				//Default Constructor
 
-	void viewConnected();		//Meny för att visa anslutna enheter
-	void viewDashboard();		//Meny för att visa samtliga enheter
-
-	void UserMenu();			//Huvudmenyn för Dashboard
+	void DashboardMenu();			//Huvudmenyn för Dashboard
 
 
 
