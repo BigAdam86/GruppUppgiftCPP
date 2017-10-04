@@ -4,6 +4,8 @@
 #include <string>
 #include "Devices.h"
 #include "Dashboard.h"
+#include <iostream>
+
 
 using namespace std;
 

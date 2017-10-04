@@ -1,4 +1,5 @@
 #include <string>
+#include<iostream>
 #include "Cloud.h"
 #include "Dashboard.h"
 #pragma once
