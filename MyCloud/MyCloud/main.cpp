@@ -22,7 +22,7 @@ int main() {
 	
 	int input = 0;
 	do {
-		
+		Cloud::PrintWelcome();
 		cout << "Press [1] to view connected units." << endl;
 		cout << "Press [2] to connect a predefined unit." << endl;
 		cout << "Press [3] to disconnect a unit." << endl;

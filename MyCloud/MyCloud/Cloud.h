@@ -28,7 +28,7 @@ public:
 	void ConnectDevice(Devices);		//Skapar en enhet
 	void DisconnectDevice(Devices);		//Tar bort en enhet
 
-	void PrintWelcome();		//Välkomstmeddelande
+	static void PrintWelcome();		//Välkomstmeddelande
 	
 
 };
