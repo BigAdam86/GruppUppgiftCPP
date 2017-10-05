@@ -1,10 +1,8 @@
-#include <string>
-#include<iostream>
-#include "Cloud.h"
-#include "Dashboard.h"
+
 #pragma once
 #ifndef Devices_h
 #define Devices_h
+#include<iostream>
 
 using namespace std;		
 
@@ -17,7 +15,7 @@ private:
 	bool d_status;			//Enhetens Status (Connected/Disconnected)
 public:
 	Devices();
-	Devices(string);		//Default Constructor
+	Devices(int , string , bool);		//Default Constructor
 	
 	void setId(int);		//Skriver till d_id
 	void setName(string);	//Skriver till d_name

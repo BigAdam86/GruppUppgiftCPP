@@ -1,6 +1,11 @@
 #include "Cloud.h"
 #include "Devices.h"
 #include <iostream>
+#include <string>
+#include <cstdlib>
+#include <map>
+
+using namespace std;
 
 Cloud::Cloud() {
 	//do you really need some?
@@ -24,11 +29,25 @@ void Cloud::viewDashboard() {
 	int pID = AllDevices[i].getId();
 	string pName = AllDevices[i].getName();
 	bool pStatus = AllDevices[i].getStatus();
-	cout << pID << pName << pStatus << endl;
+	//cout << pID << pName << pStatus << endl;
 	}
 }
 
-void SetupDevice() {
+void Cloud:: SetupDevice() {
+	int id;
+	cout << "enter id:" << endl;
+	cin >> id;
+	string name;
+	cout << "enter name:" << endl;
+	cin >> name;
+	bool status;
+	cout << "enter status 0 = OFF, 1 = ON:" << endl;
+	cin >> status;
+
+	Devices d(id, name, status);
+	allDevices[id] = d;
+	//allDevices.erase[id]; för att tabort i map:en
+
 
 }
 
@@ -40,15 +59,27 @@ void Cloud::ConnectDevice(Devices x) {
 	cout << "Confirmed: " << print_name << endl;
 }
 
-void Cloud::SetupDevice() {
 
-}
-
-void Cloud::DisconnectDevice(Devices x) {
-	cout << "Function not yet implemented.." << endl;
+void Cloud::DisconnectDevice() {
+	int id;
+	cout << "Enter id for device you want to delete"  << endl;
+	cin >> id;
+	allDevices.erase(id); //för att tabort i map:en
+	cout << "device with id:"<< id  <<" removed.."<< endl;
 }
 
 void Cloud::PrintWelcome() {
 	cout << "Welcome!" << endl;
+}
+
+void Cloud::ViewDevices() {
+	for (auto it = allDevices.begin(); it != allDevices.end(); ++it)
+	{
+		int key = it->first;
+		Devices& value = it->second;
+		cout << value.getName() << endl;
+		cout << value.getId() << endl;
+		cout << value.getStatus() << endl;
+	}
 }
 

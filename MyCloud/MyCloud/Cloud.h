@@ -1,11 +1,9 @@
+#include "Devices.h"
+#include <iostream>
+#include <map>
 #pragma once
 #ifndef cloud_h
 #define cloud_h
-#include <string>
-#include "Devices.h"
-#include "Dashboard.h"
-#include <iostream>
-
 
 using namespace std;
 
@@ -13,7 +11,7 @@ using namespace std;
 
 class Cloud {
 public:
-	
+	map<int, Devices> allDevices;
 	Devices ConnectedDevices[100];
 	Devices AllDevices[100];
 
@@ -23,10 +21,10 @@ public:
 	void initDashboard(Devices);
 	void viewConnected();		//Meny för att visa anslutna enheter
 	void viewDashboard();		//Meny för att visa samtliga enheter
-
+	void ViewDevices();
 	void SetupDevice();
 	void ConnectDevice(Devices);		//Skapar en enhet
-	void DisconnectDevice(Devices);		//Tar bort en enhet
+	void DisconnectDevice();		//Tar bort en enhet
 
 	static void PrintWelcome();		//Välkomstmeddelande
 	

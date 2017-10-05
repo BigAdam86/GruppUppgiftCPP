@@ -9,7 +9,7 @@ int main() {
 	
 	Cloud MainCloud;
 
-	Devices d1("Sensor1");
+	/*Devices d1("Sensor1");
 	Devices d2("Sensor2");
 	Devices d3("Light1");
 	Devices d4("Light2");
@@ -18,7 +18,7 @@ int main() {
 	MainCloud.initDashboard(d2);
 	MainCloud.initDashboard(d3);
 	MainCloud.initDashboard(d4);
-	
+	*/
 	
 	int input = 0;
 	do {
@@ -38,9 +38,11 @@ int main() {
 			MainCloud.SetupDevice();
 			break;
 		case 3:
+			MainCloud.DisconnectDevice();
+					
 			break;
 		case 4:
-			MainCloud.viewDashboard();
+			MainCloud.ViewDevices();
 			break;
 		default:
 			cout << "Bitch Please!\n";

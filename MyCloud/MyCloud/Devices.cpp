@@ -4,9 +4,10 @@ Devices::Devices() {
 
 }
 
-Devices::Devices(string name) {
-	d_name = name;
-	
+Devices::Devices(int d_id, string d_name, bool d_status) {
+	this->d_name = d_name;
+	this->d_id = d_id;
+	this->d_status = d_status;
 	static int device_counter = 0;
 	device_counter++;
 	d_id = device_counter;
