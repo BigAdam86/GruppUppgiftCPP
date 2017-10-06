@@ -24,7 +24,7 @@ int main() {
 	do {
 		Cloud::PrintWelcome();
 		cout << "Press [1] to view connected units." << endl;
-		cout << "Press [2] to connect a predefined unit." << endl;
+		cout << "Press [2] to connect a unit." << endl;
 		cout << "Press [3] to disconnect a unit." << endl;
 		cout << "Press [4] to view avaliable devices." << endl;
 		cout << "Press [5] to quit." << endl;

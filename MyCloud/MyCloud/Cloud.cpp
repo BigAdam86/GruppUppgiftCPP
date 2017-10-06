@@ -6,7 +6,7 @@
 #include <map>
 
 using namespace std;
-
+Devices dv;
 Cloud::Cloud() {
 	//do you really need some?
 }
@@ -21,7 +21,7 @@ void Cloud::initDashboard(Devices x) {
 }
 
 void Cloud::viewConnected() {
-	cout << "Function not yet implemented" << endl;
+	allDevices.find(id);
 }
 
 void Cloud::viewDashboard() {
@@ -69,7 +69,7 @@ void Cloud::DisconnectDevice() {
 }
 
 void Cloud::PrintWelcome() {
-	cout << "Welcome!" << endl;
+	cout << "      *******Welcome!*******" << endl;
 }
 
 void Cloud::ViewDevices() {
@@ -77,9 +77,9 @@ void Cloud::ViewDevices() {
 	{
 		int key = it->first;
 		Devices& value = it->second;
-		cout << value.getName() << endl;
-		cout << value.getId() << endl;
-		cout << value.getStatus() << endl;
+		cout <<"Name: "<< value.getName() << endl;
+		cout <<"ID: "<< value.getId() << endl;
+		cout <<"Status: "<< value.getStatus() << endl;
 	}
 }
 
