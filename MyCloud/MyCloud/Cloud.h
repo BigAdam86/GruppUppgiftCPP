@@ -12,8 +12,8 @@ using namespace std;
 class Cloud {
 public:
 	map<int, Devices> allDevices;
-	//Devices ConnectedDevices[100];
-	//Devices AllDevices[100];
+	Devices ConnectedDevices[100];
+	Devices AllDevices[100];
 
 public:
 	Cloud();					//Default Constructor

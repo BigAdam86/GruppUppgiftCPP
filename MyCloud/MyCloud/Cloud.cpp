@@ -21,17 +21,22 @@ void Cloud::initDashboard(Devices x) {
 }
 
 void Cloud::viewConnected() {
-	allDevices.find(id);
-}
-
-void Cloud::viewDashboard() {
-	for (int i = 1; i < 5; i++) {
-	int pID = AllDevices[i].getId();
-	string pName = AllDevices[i].getName();
-	bool pStatus = AllDevices[i].getStatus();
-	//cout << pID << pName << pStatus << endl;
+	for (auto it = allDevices.begin(); it != allDevices.end(); ++it)
+	{
+		int key = it->first;
+		Devices& value = it->second;
+		if (value.getStatus() == 1) {
+			cout << "Name: " << value.getName() << endl;
+			cout << "ID: " << value.getId() << endl;
+			cout << "Status: " << value.getStatus() << endl;
+		}
+		else {
+			cout << "no devices connected" << endl;
+		}
 	}
 }
+
+
 
 void Cloud:: SetupDevice() {
 	int id;
@@ -49,6 +54,7 @@ void Cloud:: SetupDevice() {
 	//allDevices.erase[id]; för att tabort i map:en
 
 
+
 }
 
 void Cloud::ConnectDevice(Devices x) {
@@ -64,7 +70,7 @@ void Cloud::DisconnectDevice() {
 	int id;
 	cout << "Enter id for device you want to delete"  << endl;
 	cin >> id;
-	allDevices.erase(id); //för att tabort i map:en
+	allDevices.erase(id); //för att ta bort i map:en
 	cout << "device with id:"<< id  <<" removed.."<< endl;
 }
 

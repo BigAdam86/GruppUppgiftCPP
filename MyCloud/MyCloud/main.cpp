@@ -8,17 +8,6 @@ using namespace std;
 int main() {
 	
 	Cloud MainCloud;
-
-	/*Devices d1("Sensor1");
-	Devices d2("Sensor2");
-	Devices d3("Light1");
-	Devices d4("Light2");
-
-	MainCloud.initDashboard(d1);
-	MainCloud.initDashboard(d2);
-	MainCloud.initDashboard(d3);
-	MainCloud.initDashboard(d4);
-	*/
 	
 	int input = 0;
 	do {
