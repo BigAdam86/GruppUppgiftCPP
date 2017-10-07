@@ -2,19 +2,15 @@
 #include "Dashboard.h"
 #include "Cloud.h"
 #include "Devices.h"
+using namespace std;
 
 Dashboard::Dashboard() {
-	//Default Constructor
+	//ViewDevices();
+
 }
 
-void Dashboard::DashboardMenu() {
-	for (auto it = allDevices.begin(); it != allDevices.end(); ++it)
-	{
-		int key = it->first;
-		Devices& value = it->second;
-		cout << "Name: " << value.getName() << endl;
-		cout << "ID: " << value.getId() << endl;
-		cout << "Status: " << value.getStatus() << endl;
-	}
+void Dashboard::DashboardMenu()
+{
+	Cloud::ViewDevices();
 }
 

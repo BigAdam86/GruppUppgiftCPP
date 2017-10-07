@@ -6,8 +6,6 @@
 
 using namespace std;		
 
-
-
 class Devices {
 public:
 	int d_id;				//Enhetens ID

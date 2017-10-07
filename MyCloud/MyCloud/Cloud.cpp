@@ -30,7 +30,6 @@ void Cloud::viewConnected() {
 	}
 }
 
-
 void Cloud:: SetupDevice() {
 	int id;
 	cout << "enter id:" << endl;

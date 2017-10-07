@@ -8,16 +8,11 @@
 #define Dashboard_h
 using namespace std;
 
-class Dashboard :public Cloud, public Devices{
-private:
-	string title;
+class Dashboard : public Cloud{
+
 public:
-	Dashboard();				//Default Constructor
+			Dashboard();				//Default Constructor
 
-	void DashboardMenu();			//Huvudmenyn för Dashboard
-
-
-
+			 void DashboardMenu();			//Huvudmenyn för Dashboard
 };
-
 #endif

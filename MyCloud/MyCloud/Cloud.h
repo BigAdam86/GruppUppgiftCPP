@@ -10,19 +10,16 @@ using namespace std;
 class Cloud {
 
 public:
-	map<int, Devices> allDevices;
-	Devices ConnectedDevices[100];
-	Devices AllDevices[100];
+	  map<int, Devices> allDevices;
 
 public:
-	Cloud();					//Default Constructor
+	Cloud();						//Default Constructor
 
-	void viewConnected();		//Meny för att visa anslutna enheter
-	void ViewDevices();
-	void SetupDevice();
-	void DisconnectDevice();		//Tar bort en enhet
-
-	static void PrintWelcome();		//Välkomstmeddelande
+		void viewConnected();		//Meny för att visa anslutna enheter
+		void ViewDevices();
+		void SetupDevice();
+		void DisconnectDevice();	//Tar bort en enhet
+ static void PrintWelcome();		//Välkomstmeddelande
 };
 
 #endif

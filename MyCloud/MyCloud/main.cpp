@@ -5,10 +5,7 @@
 using namespace std;
 
 int main() {
-	
 	Cloud MainCloud;
-	Dashboard Dash;
-
 	int input = 0;
 	do {
 		
@@ -31,7 +28,7 @@ int main() {
 					
 			break;
 		case 4:
-			//Dash.DashboardMenu(); <--- VG men den funkar inte..
+			//Dashboard::DashboardMenu();// <--- VG men den funkar inte..
 			MainCloud.ViewDevices(); //flytta denna function till dashboard för VG
 			break;
 		default:
