@@ -1,4 +1,5 @@
 #include "Devices.h"
+#include "Dashboard.h"
 
 Devices::Devices() {
 

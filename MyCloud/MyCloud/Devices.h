@@ -9,7 +9,7 @@ using namespace std;
 
 
 class Devices {
-private:
+public:
 	int d_id;				//Enhetens ID
 	string d_name;			//Enhetens Namn
 	bool d_status;			//Enhetens Status (Connected/Disconnected)

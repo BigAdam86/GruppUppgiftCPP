@@ -1,17 +1,17 @@
-//HEADER
-
 #include <iostream>
 #include "Cloud.h"
 #include "Devices.h"
+#include "Dashboard.h"
 using namespace std;
 
 int main() {
 	
 	Cloud MainCloud;
-	
+	Dashboard Dash;
+
 	int input = 0;
 	do {
-		Cloud::PrintWelcome();
+		
 		cout << "Press [1] to view connected units." << endl;
 		cout << "Press [2] to connect a unit." << endl;
 		cout << "Press [3] to disconnect a unit." << endl;
@@ -31,7 +31,8 @@ int main() {
 					
 			break;
 		case 4:
-			MainCloud.ViewDevices();
+			//Dash.DashboardMenu(); <--- VG men den funkar inte..
+			MainCloud.ViewDevices(); //flytta denna function till dashboard för VG
 			break;
 		default:
 			cout << "Bitch Please!\n";

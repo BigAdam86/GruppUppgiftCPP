@@ -1,23 +1,14 @@
 #include "Cloud.h"
 #include "Devices.h"
+#include "Dashboard.h"
 #include <iostream>
 #include <string>
 #include <cstdlib>
 #include <map>
 
 using namespace std;
-Devices dv;
 Cloud::Cloud() {
 	//do you really need some?
-}
-
-void Cloud::initDashboard(Devices x) {
-	static int counter = 0;
-	counter++;
-	AllDevices[counter] = x;
-	int control = AllDevices[counter].getId();
-	//cout << "Confirmed ID: " << control << endl;
-
 }
 
 void Cloud::viewConnected() {
@@ -28,14 +19,16 @@ void Cloud::viewConnected() {
 		if (value.getStatus() == 1) {
 			cout << "Name: " << value.getName() << endl;
 			cout << "ID: " << value.getId() << endl;
-			cout << "Status: " << value.getStatus() << endl;
+			cout << "Status [1]= ON, [0] = OFF: " << value.getStatus() << endl;
+		}
+		else if (value.getStatus() == 0) {
+			cout << "no devices connected" << endl;
 		}
 		else {
-			cout << "no devices connected" << endl;
+			cout << "No devices connected" << endl;
 		}
 	}
 }
-
 
 
 void Cloud:: SetupDevice() {
@@ -51,20 +44,7 @@ void Cloud:: SetupDevice() {
 
 	Devices d(id, name, status);
 	allDevices[id] = d;
-	//allDevices.erase[id]; för att tabort i map:en
-
-
-
 }
-
-void Cloud::ConnectDevice(Devices x) {
-	static int counter = 0;
-	counter++;
-	ConnectedDevices[counter] = x;
-	string print_name = ConnectedDevices[counter].getName();
-	cout << "Confirmed: " << print_name << endl;
-}
-
 
 void Cloud::DisconnectDevice() {
 	int id;
