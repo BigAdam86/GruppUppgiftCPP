@@ -27,7 +27,6 @@ int main() {
 			break;
 		case 3:
 			MainCloud.DisconnectDevice();
-					
 			break;
 		case 4:
 			Dash.DashboardMenu();

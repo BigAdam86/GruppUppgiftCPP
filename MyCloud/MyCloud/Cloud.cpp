@@ -39,7 +39,7 @@ void Cloud:: SetupDevice() {
 	cout << "enter status 0 = OFF, 1 = ON:" << endl;
 	cin >> status;
 
-	Devices d(id, name, status); //en device god dammit
+	Devices d(id, name, status); 
 	allDevices[id] = d;
 }
 
@@ -47,7 +47,7 @@ void Cloud::DisconnectDevice() {
 	int id;
 	cout << "Enter id for device you want to delete"  << endl;
 	cin >> id;
-	allDevices.erase(id); //för att ta bort i map:en
+	allDevices.erase(id); //För att ta bort i map:en.
 	cout << "device with id:"<< id  <<" removed.."<< endl;
 }
 

@@ -24,7 +24,7 @@ void Dashboard::TurnOff(int id) { // metod för att stänga av komponenter.
 		}
 	}
 }
-void Dashboard::DashboardMenu() // fråga användaren vad hen vill göra stänga av eller sätta på
+void Dashboard::DashboardMenu() // Fråga användaren vad hen vill göra stänga av eller sätta på
 {
 	int input;
 	do {

@@ -15,8 +15,8 @@ public:
 
 public:
 			Dashboard();
-			Dashboard(Cloud);				//Default Constructor
-	   void DashboardMenu();//Huvudmenyn för Dashboard
-	   void TurnOff(int);
+			Dashboard(Cloud);		//Default Constructor
+	   void DashboardMenu();		//Huvudmenyn för Dashboard
+	   void TurnOff(int);			//Ändra status på enhet.
 };
 #endif
