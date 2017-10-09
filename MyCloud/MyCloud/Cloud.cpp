@@ -21,9 +21,7 @@ void Cloud::viewConnected() {
 			cout << "ID: " << value.getId() << endl;
 			cout << "Status [1]= ON, [0] = OFF: " << value.getStatus() << endl;
 		}
-		else if (value.getStatus() == 0) {
-			cout << "no devices connected" << endl;
-		}
+		
 		else {
 			cout << "No devices connected" << endl;
 		}

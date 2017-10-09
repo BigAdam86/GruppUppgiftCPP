@@ -8,7 +8,7 @@
 #define Dashboard_h
 using namespace std;
 
-class Dashboard : public Cloud, public Devices{
+class Dashboard : public Cloud{
 public:
 
 	Cloud moln;

@@ -6,7 +6,7 @@ using namespace std;
 
 int main() {
 	Cloud MainCloud;
-	Dashboard d;
+
 	int input = 0;
 	do {
 		Dashboard Dash(MainCloud);
@@ -31,8 +31,6 @@ int main() {
 			break;
 		case 4:
 			Dash.DashboardMenu();
-			//Dashboard::ViewDevices();// <--- VG men den funkar inte..
-			//MainCloud.ViewDevices(); //flytta denna function till dashboard för VG
 			break;
 		default:
 			cout << "Bitch Please!\n";
