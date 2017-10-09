@@ -6,9 +6,11 @@ using namespace std;
 
 int main() {
 	Cloud MainCloud;
+	Dashboard d;
 	int input = 0;
 	do {
-		
+		Dashboard Dash(MainCloud);
+
 		cout << "Press [1] to view connected units." << endl;
 		cout << "Press [2] to connect a unit." << endl;
 		cout << "Press [3] to disconnect a unit." << endl;
@@ -28,8 +30,9 @@ int main() {
 					
 			break;
 		case 4:
-			//Dashboard::DashboardMenu();// <--- VG men den funkar inte..
-			MainCloud.ViewDevices(); //flytta denna function till dashboard för VG
+			Dash.DashboardMenu();
+			//Dashboard::ViewDevices();// <--- VG men den funkar inte..
+			//MainCloud.ViewDevices(); //flytta denna function till dashboard för VG
 			break;
 		default:
 			cout << "Bitch Please!\n";
