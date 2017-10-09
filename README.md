@@ -7,10 +7,10 @@ Copyright © 2017 by Haithem & Adam
 MyCloud™ is a Cloud Simulator that lets you connect virtual devices and display them on the console 
 
 ## System Requirements
-**OS:** Minimum: MS-DOS *Recommended: Windows 3.11 or higher.*
-**CPU:** Minumum: 20 MHz *Recommended: 60MHz* 
-**RAM:** 16 Mb DDR
-**Input:** Keyboard
+**OS:** Minimum: MS-DOS *Recommended: Windows 3.11 or higher.*  
+**CPU:** Minumum: 20 MHz *Recommended: 60MHz*   
+**RAM:** 16 Mb DDR  
+**Input:** Keyboard  
 
 ## Known Issues
 Some users may experince nausea while using this software.
