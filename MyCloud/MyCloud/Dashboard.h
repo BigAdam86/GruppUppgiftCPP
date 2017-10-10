@@ -10,13 +10,11 @@ using namespace std;
 
 class Dashboard : public Cloud{
 public:
-
 	Cloud moln;
-
 public:
 			Dashboard();
 			Dashboard(Cloud);		//Default Constructor
 	   void DashboardMenu();		//Huvudmenyn för Dashboard
 	   void TurnOff(int);			//Ändra status på enhet.
 };
-#endif
+#endif //Dashboard.h

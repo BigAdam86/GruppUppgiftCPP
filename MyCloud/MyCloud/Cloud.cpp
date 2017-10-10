@@ -8,7 +8,6 @@
 
 using namespace std;
 Cloud::Cloud() {
-	//do you really need some?
 }
 
 void Cloud::viewConnected() {
@@ -19,7 +18,7 @@ void Cloud::viewConnected() {
 		if (value.getStatus() == 1) {
 			cout << "Name: " << value.getName() << endl;
 			cout << "ID: " << value.getId() << endl;
-			cout << "Status [1]= ON, [0] = OFF: " << value.getStatus() << endl;
+			cout << "Status: " << value.getStatus() << "\n[1]= ON,\n[0]= OFF"  << endl;
 		}
 		
 		else {
@@ -51,7 +50,7 @@ void Cloud::DisconnectDevice() {
 	cout << "device with id:"<< id  <<" removed.."<< endl;
 }
 
-void Cloud::PrintWelcome() {
+void Cloud::PrintWelcome() const {
 	cout << "      *******Welcome!*******" << endl;
 }
 

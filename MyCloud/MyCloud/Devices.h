@@ -3,11 +3,10 @@
 #ifndef Devices_h
 #define Devices_h
 #include<iostream>
-
 using namespace std;		
 
 class Devices {
-public:
+private:
 	int d_id;						//Enhetens ID
 	string d_name;					//Enhetens Namn
 	bool d_status;					//Enhetens Status (Connected/Disconnected)

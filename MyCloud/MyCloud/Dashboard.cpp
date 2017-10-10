@@ -10,7 +10,7 @@ Dashboard::Dashboard() {
 }
 
 Dashboard::Dashboard(Cloud cloud) {
-	this->moln = cloud;
+	(*this).moln = cloud;
 }
 void Dashboard::TurnOff(int id) { // metod för att stänga av komponenter.
 	bool status = false;

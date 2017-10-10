@@ -4,7 +4,6 @@
 #pragma once
 #ifndef cloud_h
 #define cloud_h
-
 using namespace std;
 
 class Cloud {
@@ -13,14 +12,13 @@ public:
 		 map<int, Devices> allDevices;	
 
 public:
-	Cloud();						//Default Constructor
-		
+			 Cloud();				//Default Constructor
 		void viewConnected();		//Meny för att visa anslutna enheter
 		void ViewDevices();			//Skriver ut enheter.
 		void SetupDevice();			//Användare matar in värden.
 		void DisconnectDevice();	//Tar bort en enhet.
-		void PrintWelcome();		//Välkomstmeddelande.
+		void PrintWelcome() const;	//Välkomstmeddelande.
 		void ViewDash();
 };
 
-#endif
+#endif //Cloud.h
